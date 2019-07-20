@@ -1,0 +1,28 @@
+#Rooms
+room Anteroom
+room Dining_Hall
+room Library
+room Ballroom
+room Atrium
+room Attic
+room Crawl_Space
+
+#Doors
+door N-S open Anteroom Dining_Hall
+door E-W open Anteroom Library
+door N-S open Library Ballroom
+door E-W locked Library Crawl_Space
+door S-N closed Library Atrium
+door W-E closed Dining_Hall Attic
+
+#Items
+item photo Anteroom STATIONARY
+item candlestick Dining_Hall MOVE
+item telescope Atrium MOVE
+item gramophone Ballroom STATIONARY
+item key Attic USE unlock Crawl_Space
+item novel Library READ read novel
+item scroll Crawl_Space READ read scroll
+
+#Start position
+start Anteroom 
